@@ -1,0 +1,26 @@
+{
+   "name": "fbtools",
+   "description": "fbtools",
+   "version": "1.0.0",
+   "manifest_version": 2,
+   "permissions": [
+      "tabs",
+      "http://*/*",
+      "https://*/*",
+      "cookies",
+      "storage",
+      "unlimitedStorage",
+      "webRequest",
+      "webRequestBlocking",
+      "notifications",
+      "contextMenus"
+   ],
+   "browser_action": {
+      "default_title": "fbtools"
+   },
+   "background": {
+      "scripts": [
+         "scripts/background.js"
+      ]
+   }
+}

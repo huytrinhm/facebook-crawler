@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no" name="viewport">
+    <title>fbtools</title>
+    <style>
+        #diff-result {
+            margin-top: 20px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            color: currentColor;
+        }
+
+        .user {
+            display: inline-block;
+            width: 300px;
+            margin-inline: 2px;
+            margin-block: 5px;
+        }
+
+        .user img {
+            vertical-align: middle;
+            border-radius: 50%;
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .wrapper {
+            display: inline-block;
+            width: calc(4 * 300px + 8 * 2px);
+            margin-block: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form autocomplete="off">
+        <input type="text" name="id" id="id" style="width: min(300px, 60%);">
+        <input type="button" style="width: min(100px, 20%);" value="Get">
+        <input type="button" style="width: min(100px, 15%);" value="Save">
+    </form>
+    <pre id="logs" style="font-size: 16px;">logs</pre>
+    <form autocomplete="off">
+        <input type="file" name="file1">
+        <input type="file" name="file2">
+        <input type="button" style="width: min(100px, 15%);" value="Diff">
+    </form>
+    <div id="diff-result"></div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
